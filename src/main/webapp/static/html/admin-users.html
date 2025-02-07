@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Users</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/vendor/materialize/js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/css/page.css">     
+
+      
+   </head>
+  
+   <body >
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="brand-logo" id="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav sidenav-fixed mymenu">
+               <li><a href="admin-trainingcalendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li><a href="admin-trainingcourse.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body" style="display: block;">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-jobroles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-trainingcategory.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-usergroups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ipaddress.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li><a href="admin-trainingworkflow.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topicdifficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li class="active"><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+
+         
+            
+
+        <div class="container2">
+          <div class="row">
+            <div class="col s12 m9">
+               <h4>Users</h4>
+            </div>
+            <div id="navpad" class="nav-wrapper col s12 m3 row">
+              <div class="row">
+                 <div class="input-field col s12 m12">
+                    <a href="admin-create-new-user.html" id="add-location" style="width:100%;text-transform:capitalize;" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">add_circle</i>Create New User</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <hr style="width:100%;">
+          </div>
+
+          <div class="row">
+            <div class="divcard">
+             <form>
+                 <legend style="margin-bottom: 10px;"><b>&nbspSearch Filter&nbsp</b></legend>
+                 <div class="row">
+                   <div class="col s12 m4">
+                     <b>Job Role</b>
+                     <select id="jobRoleDropdown">
+                       <option selected="">All</option>
+                       <option>asd</option>
+                       <option>asd</option>
+                     </select>
+                   </div>
+                   <div class="col s12 m4">
+                     <b>User Type</b>
+                     <select id="userTypeDropdown">
+                       <option selected="">All</option>
+                       <option>asd</option>
+                       <option>asd</option>
+                     </select>
+                   </div>
+                   <div class="col s12 m4">
+                     <b>Status</b>
+                     <select>
+                       <option selected="">All</option>
+                       <option>asd</option>
+                       <option>asd</option>
+                     </select>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col s12 m4">
+                     <b>Last Name</b>
+                     <input type="text" name="">
+                   </div>
+                   <div class="col s12 m4">
+                     <b>First Name</b>
+                     <input type="text" name="">
+                   </div>
+                   <div class="col s12 m4">
+                     <b>Employee Number</b>
+                     <input type="text" name="employee_number">
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="right buttonright">
+                      <a class="btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">refresh</i>Reset</a>
+                      <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">search</i>Search</a>
+                   </div>
+                 </div>
+             </form>
+           </div>
+           </div>
+
+
+
+           <div class="row">
+            <div class="divcard">
+              <table class="highlight striped responsive-table">
+                <thead>
+                  <tr>
+                      <th>Actions</th>
+                      <th>Last Name<a href="#!" class="sort-by"></a></th>
+                      <th>First Name<a href="#!" class="sort-by"></a></th>
+                      <th>Employee Number<a href="#!" class="sort-by"></a></th>
+                      <th>Job Role<a href="#!" class="sort-by"></a></th>
+                      <th>Username<a href="#!" class="sort-by"></a></th>
+                      <th>User Type<a href="#!" class="sort-by"></a></th>
+                      <th>Status<a href="#!" class="sort-by"></a></th>
+                  </tr>
+                </thead>
+                <tbody id="userTblBody">
+                  <!--responsive table content-->
+                </tbody>
+              </table>
+               <div id="userTblPagination">
+                  <!--Pagination-->
+               </div>
+            </div>
+          </div>
+            
+        </div>
+
+
+      </div>
+
+   </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Trainee Financials</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../../CSS/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../../js/materialize.min.js"></script>  
+      <script src = "../../js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../../CSS/traineepage.css">  
+   </head>
+  
+   <body>
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav mymenu">
+               <li><a href="trainee-dashboard.html" class="waves-effect waves-light"><i class="material-icons">dashboard</i>Dashboard</a></li>
+               <li><a href="trainee-details.html" class="waves-effect waves-light"><i class="material-icons">details</i>Details</a></li>
+               <li><a href="trainee-classroomtraining.html" class="waves-effect waves-light"><i class="material-icons">class</i>Trainees</a></li>
+               <li><a href="trainee-attendance.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Attendance</a></li>
+               <li><a href="trainee-settings.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Settings</a></li>
+               <li><a href="trainee-materials.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Materials</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">assessment</i>Exams</a></li>
+               <li><a href="trainee-financials.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Financials</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container1">
+          <div class="row">
+            <div class="col s12 m3" style="padding-top: 20px;">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../../resources/images/usersimage/user.png">
+                  <a class="btn-floating btn-large halfway-fab waves-effect waves-light bttn"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+              <div>
+                <h6><b>Passenger Handling</b></h6>
+                <p><label><span>Class 101</span></label></p>
+                <p><label><span>Classroom Training</span></label></p>
+                <p><label><span>Status</span></label></p>
+              </div>
+            </div>
+            <div class="col s12 m9" style="padding: 5px;">
+              <div class="row" style="margin-bottom: 20px;">
+                <ul class="pagination hide-on-med-and-down">
+                  <li><a href="trainee-dashboard.html"><u>Dashboard</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-details.html"><u>Details</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-classroomtraining.html"><u>Trainees</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-attendance.html"><u>Attendance</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-settings.html"><u>Settings</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-materials.html"><u>Materials</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-exams.html"><u>Exams</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-financials.html">Financials</a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Evaluation</u></a></li>
+                </ul>
+              </div>
+              <!-- content starts here -->
+              <div class="divcard">
+
+                <div class="row">
+                  <div class="right">
+                    <a href="#!" class="btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;"><i class="material-icons left">arrow_back</i>Back</a>
+                    <a href="#!" class="btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;"><i class="material-icons left">save</i>Save Attendance</a>
+                  </div>
+                </div>
+
+                <!-- Trainers section starts here -->
+                <h6><b>Trainers</b></h6>
+
+                <div class="row" style="padding: 10px;">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Trainer</th>
+                        <th>Rate</th>
+                        <th></th>
+                        <th>No. of Days</th>
+                        <th></th>
+                        <th>Total Cost</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>
+                          <select>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>x</td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>=</td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>
+                          <a href="#!"><i class="material-icons">delete</i></a>
+                          <a href="#!"><i class="material-icons">add_circle</i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- trainers section ends here -->
+
+                <!-- Materials section starts here -->
+                <h6 style="margin-top: 30px;"><b>Materials</b></h6>
+
+                <div class="row" style="padding: 10px;">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Material</th>
+                        <th>Price</th>
+                        <th></th>
+                        <th>Quantity</th>
+                        <th></th>
+                        <th>Total Cost</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>x</td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>=</td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>
+                          <a href="#!"><i class="material-icons">delete</i></a>
+                          <a href="#!"><i class="material-icons">add_circle</i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- Materials section ends here -->
+
+                <!-- Others section starts here -->
+                <h6 style="margin-top: 30px;"><b>Others</b></h6>
+
+                <div class="row" style="padding: 10px;">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                        <th>Quantity</th>
+                        <th></th>
+                        <th>Total Cost</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>x</td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>=</td>
+                        <td>
+                          <input type="text" name="">
+                        </td>
+                        <td>
+                          <a href="#!"><i class="material-icons">delete</i></a>
+                          <a href="#!"><i class="material-icons">add_circle</i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- Others section ends here -->
+
+                <div class="row" style="padding: 10px;">
+                  <div class="right">
+                    <b>Total Cost:</b>
+                    <input type="text" name="">
+                  </div>
+                </div>
+
+              </div>
+              <!-- content ends here -->
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+  </body>
+</html>

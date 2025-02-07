@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Training Calendar</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/vendor/materialize/js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/css/page.css">  
+
+      <!-- calender CSS starts here -->
+      <link href='../../plugins/calendar/core/main.css' rel='stylesheet' />
+      <link href='../../plugins/calendar/daygrid/main.css' rel='stylesheet' />
+      <link href='../../plugins/calendar/timegrid/main.css' rel='stylesheet' />
+      <link href='../../plugins/calendar/list/main.css' rel='stylesheet' />
+      <!-- calender CSS ends here -->
+
+      <!-- calender js starts here -->
+      <script src='../../plugins/calendar/core/main.js'></script>
+      <script src='../../plugins/calendar/interaction/main.js'></script>
+      <script src='../../plugins/calendar/daygrid/main.js'></script>
+      <script src='../../plugins/calendar/timegrid/main.js'></script>
+      <script src='../../plugins/calendar/list/main.js'></script>
+      <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
+            header: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            defaultDate: '2019-06-12',
+            navLinks: true, // can click day/week names to navigate views
+            selectable: true,
+            selectMirror: true,
+            select: function(arg) {
+              var title = prompt('Event Title:');
+              if (title) {
+                calendar.addEvent({
+                  title: title,
+                  start: arg.start,
+                  end: arg.end,
+                  allDay: arg.allDay
+                })
+              }
+              calendar.unselect()
+            },
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: [
+              {
+                title: 'All Day Event',
+                start: '2019-06-01'
+              },
+              {
+                title: 'Long Event',
+                start: '2019-06-07',
+                end: '2019-06-10'
+              },
+              {
+                groupId: 999,
+                title: 'Repeating Event',
+                start: '2019-06-09T16:00:00'
+              },
+              {
+                groupId: 999,
+                title: 'Repeating Event',
+                start: '2019-06-16T16:00:00'
+              },
+              {
+                title: 'Conference',
+                start: '2019-06-11',
+                end: '2019-06-13'
+              },
+              {
+                title: 'Meeting',
+                start: '2019-06-12T10:30:00',
+                end: '2019-06-12T12:30:00'
+              },
+              {
+                title: 'Lunch',
+                start: '2019-06-12T12:00:00'
+              },
+              {
+                title: 'Meeting',
+                start: '2019-06-12T14:30:00'
+              },
+              {
+                title: 'Happy Hour',
+                start: '2019-06-12T17:30:00'
+              },
+              {
+                title: 'Dinner',
+                start: '2019-06-12T20:00:00'
+              },
+              {
+                title: 'Birthday Party',
+                start: '2019-06-13T07:00:00'
+              },
+              {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2019-06-28'
+              }
+            ]
+          });
+
+          calendar.render();
+        });
+
+      </script>
+      <!-- calendar js ends here -->     
+   </head>
+  
+   <body >
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="brand-logo" id="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav sidenav-fixed mymenu">
+               <li><a href="admin-trainingcalendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li><a href="admin-trainingcourse.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body" style="display: block;">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-jobroles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-trainingcategory.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-usergroups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ipaddress.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li><a href="admin-trainingworkflow.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topicdifficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li class="active"><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container2">
+          <div class="row">
+            <div class="col s12 m12">
+               <h4>Training Calendar</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <hr style="width:100%;">
+          </div>
+
+          <!--Search Filter starts here-->
+          <div class="row">
+            <div class="divcard">
+              <div class="row">
+                <div class="col s6 m4">
+                  <b>Trainer</b>
+                  <select>
+                    <option selected="">All</option>
+                    <option>asd</option>
+                    <option>asd</option>
+                  </select>
+                </div>
+                <div class="col s6 m4">
+                  <b>Delivery Method</b>
+                  <select>
+                    <option selected="">All</option>
+                    <option>asd</option>
+                    <option>asd</option>
+                  </select>
+                </div>
+                <div class="col s10 m4">
+                  <b>Location</b>
+                  <select>
+                    <option selected="">All</option>
+                    <option>asd</option>
+                    <option>asd</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="right buttonright">
+                  <a class="btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">refresh</i>Reset</a>
+                  <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">search</i>Search</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Search Filter ends here-->
+
+          <div class="row">
+            <div class="divcard">
+              <!-- Calendar starts here -->
+              <div class="row">
+                <div class="col s12 m3">
+                  <div class="divcard" style="padding: 5px;">
+                    <legend style="margin-bottom: 10px;"><b>Class Details</b></legend>
+                  </div>
+                </div>
+                <div class="col s12 m9">
+                  <div id='calendar' class="fc fc-unthemed fc-ltr"></div>
+                </div>
+              </div>
+              <!-- Calendar ends here -->
+            </div>
+          </div>
+            
+        </div>
+
+         
+
+        
+
+
+      </div>
+
+   </body>
+</html>

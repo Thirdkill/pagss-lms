@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Create User Group</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/vendor/materialize/js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/css/page.css">      
+   </head>
+  
+   <body >
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="brand-logo" id="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav sidenav-fixed mymenu">
+               <li><a href="admin-trainingcalendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li><a href="admin-trainingcourse.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body" style="display: block;">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-jobroles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-trainingcategory.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-usergroups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ipaddress.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li><a href="admin-trainingworkflow.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topicdifficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li class="active"><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container2">
+          <div class="row">
+            <div class="col s12 m7">
+               <h4>Create User Group</h4>
+            </div>
+            <div id="navpad" class="nav-wrapper col s12 m5 row">
+              <div class="row">
+                 <div class="input-field col s6 m6">
+                    <a href="Questions.html" style="width:100%;" class="btn waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">not_interested</i>Cancel</a>
+                 </div>
+                 <div class="input-field col s6 m6">
+                    <a style="width:100%;" class="btn waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">save</i>Save</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <hr style="width:100%;">
+          </div>
+
+          <div class="row">
+            <div class="divcard">
+              <div class="row">
+                <div class="col s12 m6 input-field">
+                  <input type="text" id="code" class="validate text-input" name="" >
+                  <label for="code">Code*</label>
+                </div>
+                <div class="col s12 m6 input-field">
+                  <input type="text" id="name" class="validate text-input" name="" >
+                  <label for="name">Name*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m12 input-field">
+                  <textarea style="resize:none;" id="description" class="materialize-textarea"></textarea>
+                  <label for="description">Description*</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m5 input-field">
+                  <select>
+                    <option selected="" disabled selected>Yes</option>
+                    <option>No</option>
+                  </select>
+                  <label>Subgroup?</label>
+                </div>
+                <div class="col s12 m7 input-field">
+                  <select>
+                    <option selected="" disabled selected></option>
+                    <option>asd</option>
+                    <option>asd</option>
+                  </select>
+                  <label>Maingroup</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s9 m10 input-field">
+                  <select>
+                    <option selected="" disabled selected></option>
+                    <option>asd</option>
+                    <option>asd</option>
+                    <option>asd</option>
+                  </select>
+                  <label>Group Supervisor</label>
+                </div>
+                <div id="createusergrpstatus" class="col s3 m2 ">
+                  <b style="margin-right: 10px;">Status:</b>
+                  <label>
+                    <input type="checkbox" id="locationStatus"/>
+                    <span>Active</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Text editor WYSIWYG starts here-->
+
+          <div id="container">
+            <div class="divcard">
+            <div class="row">
+              <div class="col s4 m3" style="margin-bottom: 15px;">
+                <h6 style="font-weight: bold;">Members:</h6>
+              </div>
+              <div class="col m6 hide-on-med-and-down">
+                
+              </div>
+              <div class="col s8 m3">
+                <a style="width:100%;" data-target="modal1" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">person_add</i>Add Member</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m12">
+                <table class="highlight striped responsive-table">
+                  <thead style="background-color: #cccccc;">
+                    <th>Actions</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Employee Number</th>
+                    <th>Job Role</th>
+                  </thead>
+                  <tbody id="">
+                    <tr>
+                      <td><a href=""><i class="material-icons iconfont">delete</i></a></td>
+                      <td>asd</td>
+                      <td>asd</td>
+                      <td>asd</td>
+                      <td>asd</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Text editor WYSIWYG ends here-->
+            
+        </div>
+
+
+         
+
+
+        
+
+      <!--Modal starts here-->
+
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-header">
+            <h5>Add User Group Members</h5>
+          </div>
+          <div class="modal-content">
+            <div class="content-row">
+              <div>
+                <h6 style="font-weight: bold;margin-bottom: 25px;">Filter</h6> 
+              </div>
+            </div>
+            <div class="content-row input-field">
+                  <select id="jobRoleSelect">
+                    <option selected="">All</option>
+                    <option>asd</option>
+                    <option>asd</option>
+                  </select>
+                  <label>Job Role</label>
+            </div>
+            <div class="content-row">
+              <div class="row">
+                <div class="input-field col hide-on-small-only m6">
+                </div>
+                <div style="padding-top:5px;" class="nav-wrapper col s12 m6 row">
+                   <form class="col s12">
+                      <div class="row">
+                         <div class="input-field col s4 hide-on-large-only">
+                         </div>
+                         <div class="input-field col s8 m12">
+                            <input style="padding-right: 0 !important;" id="search" type="search" name="" placeholder="search">
+                            <label class="label-icon" for="search"><i style="margin-top:4px;" class="material-icons">search</i></label>
+                            <i style="margin-top:1px;" class="material-icons">close</i>
+                         </div>
+                      </div>
+                   </form>
+                </div>
+              </div>
+            </div>
+            <div class="content-row">
+                <table class="highlight responsive-table">
+                  <thead>
+                    <tr>
+                        <th>
+                          <label style="margin-left:15px !important;">
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </th>
+                        <th>Last Name*<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                        <th>First Name*<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                        <th>Emoployee Number<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                        <th>Job Role<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label style="margin-left:15px !important;">
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+            <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">save</i>Save</a>
+          </div>
+        </div>
+
+        <!--Modal ends here-->
+      
+
+    </div>
+
+   </body>
+</html>

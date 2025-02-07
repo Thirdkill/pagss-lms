@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Classroom Training</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/js/utility/util.js"></script>
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/css/traineepage.css">    
+   </head>
+  
+   <body>
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <ul class="hide-on-med-and-down" style="margin-right: 10px;">
+                    <li class="left">
+                      <ul>
+                        <li><a data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="padding: 0 15px">menu</i></a></li>
+                        <li><a href="#!" class="compname">Learning Management System</a></li>
+                      </ul>
+                    </li>
+                    <li class="right">
+                      <ul>
+                        <li>
+                          <a href="#!" class="profset">
+                            <img id="profile" src="../assets/images/usersimage/user.png">
+                          </a>
+                        </li>
+                        <li>
+                            <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                            <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                        </li>
+                        <li>
+                          <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                        </li>
+                        <li>
+                          <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav">
+               <li><a href="admin-training-calendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li><a href="admin-training-course.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body" style="display: block;">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-job-roles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-training-category.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-user-groups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ip-address.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li><a href="admin-training-flow-setup.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topic-and-difficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container1">
+          <div class="row">
+            <div class="col s12 m3" style="padding-top: 20px;">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../../resources/images/usersimage/user.png">
+                  <a class="btn-floating btn-large halfway-fab waves-effect waves-light bttn"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+              <div>
+                <h6><b>Passenger Handling</b></h6>
+                <p><label><span>Class 101</span></label></p>
+                <p><label><span>Classroom Training</span></label></p>
+                <p><label><span>Status</span></label></p>
+              </div>
+            </div>
+            <div class="col s12 m9" style="padding: 5px;">
+              <div class="row" style="margin-bottom: 20px;">
+                <ul class="pagination hide-on-med-and-down">
+                  <li><a href="trainee-dashboard.html"><u>Dashboard</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-details.html"><u>Details</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-classroomtraining.html">Trainees</a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-attendance.html"><u>Attendance</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-settings.html"><u>Settings</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-materials.html"><u>Materials</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Exams</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Financials</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Evaluation</u></a></li>
+                </ul>
+              </div>
+              <!-- content starts here -->
+              <div class="divcard">
+
+                <div class="row">
+                  <div class="right">
+                    <a href="#!" class="btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;"><i class="material-icons left">arrow_back</i>Back</a>
+                    <a data-target="addTraineesModal" class="modal-trigger btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;"><i class="material-icons left">add_circle</i>Add Trainees</a>
+                    <a href="#!" class="btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;">Set Status as Completed</a>
+                    <a href="#!" class="btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;"><i class="material-icons left">save</i>Save</a>
+                  </div>
+                </div>
+
+                <div class="row" style="margin:20px 0 10px 0;">
+                  <div class="col s6 m6">
+                    <span class="left">Trainee List</span>
+                  </div>
+                  <div class="col s6 m6">
+                    <a href="#!"><i class="material-icons right">print</i></a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <table class="highlight striped">
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Name<a href="#!"><a href="#!" class="sort-by"></a></th>
+                            <th class="mins">Job<a href="#!" class="sort-by"></a></th>
+                            <th>User Group<a href="#!" class="sort-by"></a></th>
+                            <th>Date Enrolled<a href="#!" class="sort-by"></a></th>
+                            <th>Date Completed<a href="#!" class="sort-by"></a></th>
+                            <th>Training Status<a href="#!" class="sort-by"></a></th>
+                            <th>Comment<a href="#!" class="sort-by"></a></th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label style="margin-left:10px !important;">
+                              <input type="checkbox" id="editLocationStatus"/>
+                              <span style="padding:10px;"></span>
+                            </label>
+                            <a href="#!"><i class="material-icons">delete</i></a>
+                          </td>
+                          <td>Juan Dela Cruz</td>
+                          <td class="mins">asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>
+                            <select>
+                              <option>asd</option>
+                              <option>asd</option>
+                              <option>asd</option>
+                            </select>
+                          </td>
+                          <td>
+                            <input type="text" name="">
+                          </td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+
+                <div class="row" style="margin-top: 20px;padding: 10px;">
+                  <span>For Approval</span>
+                  <table class="highlight striped">
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Name<a href="#!" class="sort-by"></a></th>
+                            <th class="mins">Job<a href="#!" class="sort-by"></a></th>
+                            <th>User Group<a href="#!" class="sort-by"></a></th>
+                            <th>Date of Request<a href="#!" class="sort-by"></a></th>
+                            <th>Date Approved<a href="#!" class="sort-by"></a></th>
+                            <th>Approved Status<a href="#!" class="sort-by"></a></th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>asd</td>
+                          <td>Juan Dela Cruz</td>
+                          <td class="mins">asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+
+                <div class="row" style="margin-top: 20px;padding: 10px;">
+                  <span>Trainees' Grade Sheet</span>
+                  <a href="#!" class="right"><i class="material-icons">print</i></a>
+                  <table class="highlight striped">
+                      <tbody>
+                        <tr>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                          <td>asd</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+
+              </div>
+              <!-- content ends here -->
+            </div>
+          </div>
+        </div>
+
+        <!--Modal addtrainees starts here-->
+
+        <div id="addTraineesModal" class="modal modal-fixed-footer">
+            <div class="modal-header">
+              <h5>Add Trainees</h5>
+            </div>
+            <div class="modal-content">
+
+              <div class="content-row">
+                <span><b>Filter</b></span>
+              </div>
+
+              <div class="content-row">
+                <div class="row">
+                  <div class="col s6 m4" style="padding-top: 15px;">
+                    <label style="margin-left:10px !important;">
+                      <input type="checkbox" id="locationStatus"/>
+                      <span>Job Role</span>
+                    </label>
+                  </div>
+                  <div class="col s6 m8">
+                    <select>
+                      <option>asd</option>
+                      <option>asd</option>
+                      <option>asd</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-row">
+                <div class="row">
+                  <div class="col s6 m4" style="padding-top: 15px;">
+                    <label style="margin-left:10px !important;">
+                      <input type="checkbox" id="locationStatus"/>
+                      <span>User Group</span>
+                    </label>
+                  </div>
+                  <div class="col s6 m8">
+                    <input type="text" name="" disabled>
+                  </div>
+                </div>
+              </div>
+
+              <div style="padding-top:5px;" class="content-row nav-wrapper col s12 m7 row">
+                 <form class="col s12">
+                    <div class="row">
+                      <div class="col m6 hide-on-med-and-down">
+                      </div>
+                      <div class="input-field col s12 m6">
+                        <input style="padding-right: 0 !important;" id="search" type="search" name="" placeholder="search">
+                          <label class="label-icon" for="search"><i style="margin-top:4px;" class="material-icons">search</i></label>
+                        <i style="margin-top:1px;" class="material-icons">close</i>
+                      </div>
+                    </div>
+                 </form>
+              </div>
+
+              <div class="content-row">
+                <table class="highlight responsive-table">
+                  <thead>
+                    <tr>
+                        <th>
+                          <label style="margin-left:15px !important;">
+                            <input type="checkbox"/>
+                            <span></span>
+                          </label>
+                        </th>
+                        <th>Last Name<a href="#!" class="sort-by"></a></th>
+                        <th>First Name<a href="#!" class="sort-by"></a></th>
+                        <th>Employee Number<a href="#!" class="sort-by"></a></th>
+                        <th>Job Role<a href="#!" class="sort-by"></a></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label style="margin-left:15px !important;">
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+              <a class="btn waves-effect waves-light bttn" type="submit" name="action" id="saveLocationBtn"><i class="material-icons left">save</i>Save</a>
+            </div>
+        </div>
+
+        <!--Modal addtrainees ends here-->
+
+      </div>
+  </body>
+</html>

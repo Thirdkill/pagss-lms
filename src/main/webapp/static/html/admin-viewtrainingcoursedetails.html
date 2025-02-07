@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Training Course Details</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/vendor/materialize/js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/css/page.css">  
+   </head>
+  
+   <body >
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="brand-logo" id="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav sidenav-fixed mymenu">
+               <li><a href="admin-trainingcalendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li class="active"><a href="admin-trainingcourse.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-jobroles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-trainingcategory.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-usergroups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ipaddress.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li><a href="admin-trainingworkflow.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topicdifficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container2">
+          <div class="row">
+            <div class="col s12 m8">
+               <h4>Passenger Handling</h4>
+            </div>
+            <div id="navpad" class="nav-wrapper col s12 m4 row">
+              <div class="row">
+                 <div class="input-field col s6 m6">
+                    <a href="admin-trainingcourse.html" style="width:100%;" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">not_interested</i>Cancel</a>
+                 </div>
+                 <div class="input-field col s6 m6">
+                    <a style="width:100%;" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">save</i>Save</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <hr style="width:100%;">
+          </div>
+
+          <div class="row">
+            <div class="divcard">
+              <div class="row" style="margin-bottom: 20px;">
+                <div>
+                  <ul class="pagination">
+                    <li><a href="admin-viewtrainingcoursedetails.html" class="active">Details</a></li>
+                    <li style="font-size: 18px;">|</li>
+                    <li><a href="admin-courseLearningMaterials.html"><u>Learning Materials</u></a></li>
+                    <li style="font-size: 18px;">|</li>
+                    <li><a href="admin-courseLearningPath.html"><u>Learning Path</u></a></li>
+                    <li style="font-size: 18px;">|</li>
+                    <li><a href="admin-courseExaminations.html"><u>Examinations</u></a></li>
+                    <li style="font-size: 18px;">|</li>
+                    <li><a href="admin-courseEvaluation.html"><u>Evaluation</u></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m5">
+                  <b>Training Category</b>
+                  <select>
+                    <option disabled selected></option>
+                    <option>asd</option>
+                  </select>
+                </div>
+                <div class="col s10 m6">
+                  <b>Delivery Method</b>
+                  <select>
+                    <option disabled selected></option>
+                    <option>asd</option>
+                  </select>
+                </div>
+                <div class="col s2 m1 switch left">
+                  <b>Status</b>
+                  <label>
+                    <input type="checkbox">
+                    <span style="" class="lever left"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m5">
+                  <b>Course Code</b>
+                  <input type="text" name="">
+                </div>
+                <div class="col s10 m7">
+                  <b>Course Name</b>
+                  <input type="text" name="">
+                </div>
+              </div>
+              <div style="padding-top: 10px;" class="row">
+                <div class="col s12 m6">
+                  <div>
+                    <b>Course Description</b>
+                    <div class="editorgroup">
+                      <a class="custombtn waves-effect waves-light" title="Bold"><i class="material-icons">format_bold</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Italic"><i class="material-icons">format_italic</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Underline"><i class="material-icons">format_underline</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Strikethrough"><i class="material-icons">format_strikethrough</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Align Left"><i class="material-icons">format_align_left</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Align Center"><i class="material-icons">format_align_center</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Align Right"><i class="material-icons">format_align_right</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Justify"><i class="material-icons">format_align_justify</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Bullet"><i class="material-icons">format_list_bulleted</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Number"><i class="material-icons">format_list_numbered</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Undo"><i class="material-icons">undo</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Redo"><i class="material-icons">redo</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Insert Image"><i class="material-icons">image</i></a>
+                    </div>
+                    <div>
+                      <textarea id="editorarea" placeholder="Enter text here"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <div>
+                    <b>Course Objectives</b>
+                    <div class="editorgroup">
+                      <a class="custombtn waves-effect waves-light" title="Bold"><i class="material-icons">format_bold</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Italic"><i class="material-icons">format_italic</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Underline"><i class="material-icons">format_underline</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Strikethrough"><i class="material-icons">format_strikethrough</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Align Left"><i class="material-icons">format_align_left</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Align Center"><i class="material-icons">format_align_center</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Align Right"><i class="material-icons">format_align_right</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Justify"><i class="material-icons">format_align_justify</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Bullet"><i class="material-icons">format_list_bulleted</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Number"><i class="material-icons">format_list_numbered</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Undo"><i class="material-icons">undo</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Redo"><i class="material-icons">redo</i></a>
+                      <a class="custombtn waves-effect waves-light" title="Insert Image"><i class="material-icons">image</i></a>
+                    </div>
+                    <div>
+                      <textarea id="editorarea" placeholder="Enter text here"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="divcard">
+              <legend style="margin-bottom: 10px;"><b>Grading System</b></legend>
+              <div class="row">
+                <a data-target="addcomponentmodal" class="btn modal-trigger waves-effect waves-light bttn right" type="submit" name="" ><i class="material-icons left">add_circle</i>Add Component</a>
+              </div>
+              <div class="row">
+                <table class="highlight striped">
+                  <thead>
+                    <tr>
+                        <th class="min">Actions</th>
+                        <th class="large">Component<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                        <th class="min">Percentage<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="min">
+                        <a href="#!" class="waves-effect waves-light"><i class="material-icons">edit</i></a>
+                        <a href="#!" class="waves-effect waves-light"><i class="material-icons">delete</i></a>
+                      </td>
+                      <td class="large">Eclair</td>
+                      <td class="min">$0.87</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><b class="right">Total Marks</b></td>
+                      <td class="center">100</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><b class="right">Passing Grade</b></td>
+                      <td class="center">
+                        <input type="text" name="" class="center">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="divcard">
+              <legend style="margin-bottom: 10px;"><b>Class Defaults</b></legend>
+              <div class="row">
+                <div class="col s12 m5">
+                  <b>Location</b>
+                  <select>
+                    <option disabled selected></option>
+                    <option>asd</option>
+                  </select>
+                </div>
+                <div class="col s2 m7 switch left">
+                  <div class="row">
+                    <div class="col s4 m4" style="text-align: center;">
+                      <b>Self Registration</b><br>
+                      <label>
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                      </label>
+                    </div>
+                    <div class="col s4 m4" style="text-align: center;">
+                      <b>Send Certificate</b><br>
+                      <label>
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                      </label>
+                    </div>
+                    <div class="col s4 m4" style="text-align: center;">
+                      <b>Exam</b><br>
+                      <label>
+                        <input type="checkbox">
+                        <span class="lever" style="margin-left: 15px !important;"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m5">
+                  <b>Minimum Attendees</b>
+                  <input type="text" name="">
+                </div>
+                <div class="col s10 m7">
+                  <b>Maximum Attendees</b>
+                  <input type="text" name="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m5">
+                  <b>Trainer</b>
+                  <select>
+                    <option disabled selected></option>
+                    <option>asd</option>
+                  </select>
+                </div>
+                <div class="col s10 m7">
+                  <b>Schedule Type</b>
+                  <select>
+                    <option disabled selected></option>
+                    <option>asd</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;padding: 10px;">
+                <div class="file-field input-field" style="margin-top: 0 !important;">
+                  <div class="btn bttn right" style="margin-top: 20px;">
+                    <span>Browse</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper" style="padding-top: 0 !important;">
+                    <b>Display Photo</b>
+                    <input class="file-path validate" type="text" id="fileupload">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+
+
+        <!-- Add Component Modal starts here -->
+        <div id="addcomponentmodal" class="modal modal-fixed-footer">
+            <div class="modal-header">
+              <h5>Add Component</h5>
+            </div>
+            <div class="modal-content">
+              <div class="content-row">
+                <b>Component*</b>
+                <select>
+                  <option disabled selected>Others</option>
+                  <option>asd</option>
+                </select>
+                <input type="text" name="">
+              </div>
+              <div class="content-row">
+                <b>Percentage*</b>
+                <input type="text" name="">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+              <a class="btn waves-effect waves-light bttn" type="submit" name="action" id="saveLocationBtn"><i class="material-icons left">save</i>Save</a>
+            </div>
+        </div>
+        <!-- Add Component Modal ends here -->
+
+      </div>
+  </body>
+</html>

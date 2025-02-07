@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Edit Question Details</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/vendor/materialize/js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/css/page.css">  
+   </head>
+   <body>
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="brand-logo" id="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav sidenav-fixed mymenu">
+               <li><a href="admin-trainingcalendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li><a href="admin-trainingcourse.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body" style="display: block;">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-jobroles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-trainingcategory.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-usergroups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ipaddress.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li><a href="admin-trainingworkflow.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topicdifficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li class="active"><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container2">
+          <div class="row">
+            <div class="col s12 m8">
+               <h4>Edit Question Details</h4>
+            </div>
+            <div id="navpad" class="nav-wrapper col s12 m4 row">
+              <div class="row">
+                 <div class="input-field col s6 m6">
+                    <a href="admin-questions.html" style="width:100%;" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">not_interested</i>Cancel</a>
+                 </div>
+                 <div class="input-field col s6 m6">
+                    <a style="width:100%;" class="btn waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">save</i>Save</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <hr style="width:100%;">
+          </div>
+
+          <div class="row">
+            <div class="divcard">
+              <div class="row">
+                <div class="col s6 m4">
+                  <b>Type</b>
+                  <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="multipleChoice">Multiple Choice</option>
+                    <option value="fillInTheBlank">Fill In the Blanks</option>
+                    <option value="trueorfalse">True or False</option>
+                    <option value="essay">Essay</option>
+                    <option value="identification">Identification</option>
+                    <option value="enumeration">Enumeration</option>
+                    <option value="ordering">Ordering</option>
+                    <option value="matching">Matching</option>
+                    <option value="form">Form</option>
+                    <option value="assessment">Assessment</option>
+                  </select>
+                </div>
+                <div class="col s6 m3">
+                  <b>Topic</b>
+                  <select>
+                    <option disabled selected>Choose your option</option>
+                    <option>asd</option>
+                    <option>asd</option>
+                  </select>
+                </div>
+                <div class="col s10 m4">
+                  <b>Difficulty Level</b>
+                  <select>
+                    <option disabled selected>Choose your option</option>
+                    <option>asd</option>
+                    <option>asd</option>
+                  </select>
+                </div>
+                <div class="col s2 m1 switch left">
+                  <b>Status</b>
+                  <label>
+                    <input type="checkbox">
+                    <span style="" class="lever left"></span>
+                  </label>
+                </div>
+              </div>
+              <!--Hide parts on enumeration and ordering type-->
+              <div style="padding-top: 10px;" class="matching fillInTheBlank multipleChoice trueorfalse essay identification matching choiceType directType showOpt row">
+                <div class="col s12 m6">
+                  <b>Question Label</b>
+                  <input type="text" name="" id="case" class="validate">
+                </div>
+                <div class="col s12 m6">
+                  <form action="#">
+                    <div class="file-field input-field" style="margin-top: 0 !important;">
+                      <div class="btn bttn right" style="margin-top: 20px;">
+                        <span>Browse</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper" style="padding-top: 0 !important;">
+                        <b>Media Display</b>
+                        <input class="file-path validate" type="text" id="fileupload">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--up to here-->
+              <!--Form type starts here-->
+              <div style="padding-top: 10px;" class="form assessment scores showOpt row">
+                <div class="col s12 m6">
+                  <b>Question Label</b>
+                  <input type="text" name="" id="case" class="validate">
+                </div>
+              </div>
+              <!--Form type ends here-->
+            </div>
+          </div>
+
+          <!--Form upload starts here-->
+          <div class="form showOpt row">
+            <div class="divcard">
+              <div class="row">
+                <div class="col s9 m10">
+                  <form action="#">
+                    <div class="file-field input-field" style="margin-top: 0 !important;">
+                      <div class="btn bttn right" style="margin-top: 20px;">
+                        <span>Browse</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper" style="padding-top: 0 !important;">
+                        <b>Media Display</b>
+                        <input class="file-path validate" type="text" id="fileupload">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col s3 m1" style="padding-top: 20px;">
+                  <a href="#!" class="bttn waves-effect waves-light btn" style="width: auto;height: 45px;"><span>Upload</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Form upload ends here-->
+
+          <!--Text editor WYSIWYG for matching type starts here-->
+          <div class="row multipleChoice fillInTheBlank trueorfalse essay identification enumeration ordering matching assessment scores choiceType directType showOpt">
+            <div class="divcard">
+              <div class="row">
+                <b>Question</b>
+                <div class="editorgroup">
+                  <a class="custombtn waves-effect waves-light" title="Bold"><i class="material-icons">format_bold</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Italic"><i class="material-icons">format_italic</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Underline"><i class="material-icons">format_underline</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Strikethrough"><i class="material-icons">format_strikethrough</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Align Left"><i class="material-icons">format_align_left</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Align Center"><i class="material-icons">format_align_center</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Align Right"><i class="material-icons">format_align_right</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Justify"><i class="material-icons">format_align_justify</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Bullet"><i class="material-icons">format_list_bulleted</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Number"><i class="material-icons">format_list_numbered</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Undo"><i class="material-icons">undo</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Redo"><i class="material-icons">redo</i></a>
+                  <a class="custombtn waves-effect waves-light" title="Insert Image"><i class="material-icons">image</i></a>
+                  <a data-target="addAnswerModal" class="modal-trigger custombtn waves-effect waves-light right fillInTheBlank choiceType directType showOpt"><i class="material-icons">add_circle</i></a>
+                </div>
+                <div>
+                  <textarea id="editorarea" placeholder="Enter text here"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Text editor WYSIWYG for matching type ends here-->
+
+          <!--multiple choice option starts here-->
+          <div class="row multipleChoice showOpt">
+            <div class="divcard">
+              <div class="row">
+                <div>
+                  <b>Choices</b>
+                </div>
+              </div>
+              <div class="row" style="margin-bottom: 10px;">
+                <div class="col s7 m9">
+                  <input type="text" placeholder="Option">
+                </div>
+                <div class="col s3 m2">
+                  <p class="pchck">
+                    <label style="margin: 5px 0 0 10px;">
+                      <input type="checkbox" />
+                      <span>Correct</span>
+                    </label>
+                  </p> 
+                </div>
+                <div style="padding-top: 15px;" class="col s2 m1">
+                  <a class="waves-effect waves-light"><i class="material-icons">delete</i></a>
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">add_circle</i>Add a choice</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--multiple choice option ends here-->
+
+
+
+          <!--true or false option starts here-->
+          <div class="row trueorfalse showOpt">
+            <div class="divcard">
+              <div class="row">
+                <div>
+                  <p><b>Answer</b></p>
+                  <form>
+                    <p>
+                      <label style="margin-left:10px !important;">
+                        <input type="checkbox" id="editLocationStatus"/>
+                        <span>True</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label style="margin-left:10px !important;">
+                        <input type="checkbox" id="editLocationStatus"/>
+                        <span>False</span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--true or false option ends here-->
+
+
+
+          <!--Identification option starts here-->
+          <div class="row identification showOpt">
+            <div class="divcard">
+              <div class="row">
+                <div class="input-field">
+                  <b>Answer</b>
+                  <input type="text" class="validate text-input" name="" >
+                  <p>
+                    <label style="margin-left:10px !important;">
+                      <input type="checkbox" id="editLocationStatus"/>
+                      <span>Match Case</span>
+                    </label>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Identification option ends here-->
+
+
+          <!--Enumeration option starts here-->
+          <div class="row enumeration showOpt">
+            <div class="divcard">
+              <div class="row">
+                <div>
+                  <b>Answer</b>
+                </div>
+                <div class="row">
+                  <div class="col s10 m11">
+                    <input type="text" placeholder="Option">
+                  </div>
+                  <div style="padding-top: 15px;" class="col s2 m1">
+                    <a class="waves-effect waves-light"><i class="material-icons">delete</i></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">add_circle</i>Add</a>
+                    <p>
+                      <label style="margin-left:10px !important;">
+                        <input type="checkbox" id="editLocationStatus"/>
+                        <span>Match Case</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label style="margin-left:10px !important;">
+                        <input type="checkbox" id="editLocationStatus"/>
+                        <span>Ignore Order</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Enumeration option ends here-->
+
+
+
+          <!--Ordering option starts here-->
+          <div class="row ordering showOpt">
+            <div class="divcard">
+              <div class="row">
+                <div>
+                  <b>Answer</b>
+                </div>
+                <div class="row">
+                  <div class="col s10 m10">
+                    <input type="text">
+                  </div>
+                  <div class="col s2 m2 center orderingicons">
+                    <a href="#!" ><i class="material-icons">arrow_downward</i></a>
+                    <a href="#"><i class="material-icons">arrow_upward</i></a>
+                    <a href="#!"><i class="material-icons">delete</i></a>
+                  </div>
+                </div>
+                <div>
+                  <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">add_circle</i>Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Ordering option ends here-->
+
+
+          <!--Matching option starts here-->
+          <div class="row matching showOpt">
+            <div class="divcard">
+              <div class="row">
+                <div>
+                  <b>Answer</b>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <input type="text" name="" placeholder="Pair 1">
+                  </div>
+                  <div class="col s11 m5">
+                    <input type="text" name="" placeholder="Pair 1">
+                  </div>
+                  <div class="col s1 m1 orderingicons">
+                    <a href="#!"><i class="material-icons">delete</i></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <input type="text" name="" placeholder="Pair 2">
+                  </div>
+                  <div class="col s11 m5">
+                    <input type="text" name="" placeholder="Pair 2">
+                  </div>
+                  <div class="col s1 m1 orderingicons">
+                    <a href="#!"><i class="material-icons">delete</i></a>
+                  </div>
+                </div>
+                <div>
+                  <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">add_circle</i>Add Pair</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Matching option ends here-->
+
+          <!--Assessment option starts here-->
+          <div class="row assessment scores showOpt">
+            <div class="divcard">
+              <div class="row">
+                <a data-target="addCriteriaModal" class="modal-trigger bttn btn waves-effect waves-light right" type="submit"><i class="material-icons left">add_circle</i>Add Criteria</a>
+              </div>
+              <div class="row">
+                <table class="highlight striped">
+                  <thead>
+                    <tr>
+                        <th class="min">Actions</th>
+                        <th class="midl">Criteria</th>
+                        <th class="mins">Min Score</th>
+                        <th class="mins">Nax Score</th>
+                        <th class="min">Comment</th>
+                        <th class="mid">Pass Benchmark</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="min">
+                        <a data-target="addCriteriaModal" class="modal-trigger waves-effect waves-light"><i class="material-icons">pageview</i></a>
+                        <a href="#!" class="waves-effect waves-light"><i class="material-icons">edit</i></a>
+                      </td>
+                      <td class="midl">Eclair</td>
+                      <td class="mins">$0.87</td>
+                      <td class="mins">Eclair</td>
+                      <td class="min">$0.87</td>
+                      <td class="mid">$0.87</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!--Assessment option ends here-->
+            
+        </div>
+
+
+        <!-- Add answer modal for fill in the blanks starts here -->
+        <div id="addAnswerModal" class="modal modal-fixed-footer">
+          <div class="modal-header">
+            <h5>Add Answer</h5>
+          </div>
+          <div class="modal-content">
+            <div class="content-row" style="height: 200px;">
+              <b>Type</b>
+              <select>
+                <option disabled selected>Choose Type</option>
+                <option value="choiceType">Choices</option>
+                <option value="directType">Direct Answer</option>
+              </select>
+              <!-- Choice type answer starts here -->
+              <div class="choiceType showOpt">
+                <b>Choices</b>
+                <div class="row" style="margin-bottom: 10px;">
+                  <div class="col s7 m9">
+                    <input type="text">
+                  </div>
+                  <div class="col s3 m2">
+                    <p class="pchck">
+                      <label style="margin: 5px 0 0 10px;">
+                        <input type="checkbox" />
+                        <span>Correct</span>
+                      </label>
+                    </p> 
+                  </div>
+                  <div style="padding-top: 15px;" class="col s2 m1">
+                    <a class="waves-effect waves-light"><i class="material-icons">delete</i></a>
+                  </div>
+                </div>
+                <div>
+                  <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">add_circle</i>Add a choice</a>
+                </div>
+              </div>
+              <!-- Choice type answer Ends here -->
+              <!-- Direct type answer starts here -->
+              <div class="directType showOpt">
+                <b>Answer</b>
+                <div>
+                  <div>
+                    <input type="text">
+                  </div>
+                  <label style="margin-left:10px !important;">
+                    <input type="checkbox" id="locationStatus"/>
+                    <span>Match Case</span>
+                  </label>
+                </div>
+              </div>
+              <!-- Direct type answer ends here -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+            <a class="btn waves-effect waves-light bttn" type="submit" name="action" id="saveLocationBtn"><i class="material-icons left">save</i>Save</a>
+          </div>
+        </div>
+        <!-- Add answer modal for fill in the blanks starts here -->
+
+        
+
+        <!-- Assessment add criteria modal starts here-->
+        <div id="addCriteriaModal" class="modal modal-fixed-footer">
+            <div class="modal-header">
+              <h5>Add Location</h5>
+            </div>
+            <div class="modal-content">
+              <div class="content-row">
+                <div>
+                  <b>Criteria*</b>
+                    <input type="text" name="" id="editLocationCode" class="validate">
+                </div>
+                <div style="height: 250px;">
+                  <b>Comment*</b>
+                    <select>
+                      <option disabled selected></option>
+                      <option value="scores">With Comment</option>
+                      <option>asd</option>
+                      <option>asd</option>
+                    </select>
+                  <div class="row scores  showOpt">
+                    <div class="col s12 m4">
+                      <span style="text-align: center !important;font-weight: bold;">Minimum Score:*</span>
+                      <input type="text" name="" placeholder="">
+                    </div>
+                    <div class="col s12 m4">
+                      <span style="text-align: center !important;font-weight: bold;">Maximum Score:*</span>
+                      <input type="text" name="" placeholder="">
+                    </div>
+                    <div class="col s12 m4">
+                      <span style="text-align: center !important;font-weight: bold;">Pass Benchmark:*</span>
+                      <input type="text" name="" placeholder="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+              <a class="btn waves-effect waves-light bttn" id="updateLocationBtn" type="submit" name="action"><i class="material-icons left">save</i>Save</a>
+            </div>
+        </div>
+        <!-- Assessment add criteria modal ends here-->
+
+
+
+      </div>
+  </body>
+</html>

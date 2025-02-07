@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Course Learning Path</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/js/utility/util.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/CSS/page.css">  
+   </head>
+  
+   <body >
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#!" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="brand-logo" id="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav sidenav-fixed mymenu">
+               <li><a href="admin-trainingcalendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li><a href="admin-trainingcourse.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li class="active"><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-jobroles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-trainingcategory.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-usergroups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ipaddress.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li><a href="admin-trainingworkflow.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topicdifficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container2">
+          <div class="row">
+            <div class="col s12 m8">
+               <h4>Passenger Handling</h4>
+            </div>
+            <div id="navpad" class="nav-wrapper col s12 m4 row">
+              <div class="row">
+                 <div class="input-field col s6 m6">
+                    <a href="admin-trainingcourse.html" style="width:100%;" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">not_interested</i>Cancel</a>
+                 </div>
+                 <div class="input-field col s6 m6">
+                    <a style="width:100%;" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">save</i>Save</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <hr style="width:100%;">
+          </div>
+          
+          <div class="row">
+            <div class="divcard">
+              <div class="row" style="margin-bottom: 20px;">
+                <div>
+                  <ul class="pagination center">
+                    <li><a href="admin-viewtrainingcoursedetails.html"><u>Details</u></a></li>
+                    <li style="font-size: 18px;">|</li>
+                    <li><a href="admin-courseLearningMaterials.html"><u>Learning Materials</u></a></li>
+                    <li style="font-size: 18px;">|</li>
+                    <li><a href="admin-courseLearningPath.html" class="active">Learning Path</a></li>
+                    <li style="font-size: 18px;">|</li>
+                    <li><a href="admin-courseExaminations.html"><u>Examinations</u></a></li>
+                    <li style="font-size: 18px;">|</li>
+                    <li><a href="admin-courseEvaluation.html"><u>Evaluation</u></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="right">
+                  <a href="#!" class="btn waves-light waves-effect bttn" type="submit" style="margin-right: 5px;"><i class="material-icons left">arrow_back</i>Back</a>
+                  <a data-target="addSectionModal" class="modal-trigger btn waves-light waves-effect bttn" type="submit" style="margin-right: 5px;"><i class="material-icons left">add_circle</i>Add Section</a>
+                  <a data-target="addContentModal" class="modal-trigger btn waves-light waves-effect bttn" type="submit" style="margin-right: 5px;"><i class="material-icons left">add_circle</i>Add Content</a>
+                  <a data-target="addExamModal" class="modal-trigger btn waves-light waves-effect bttn" type="submit"><i class="material-icons left">add_circle</i>Add Exam</a>
+                </div>
+              </div>
+              <div class="row">
+                <div style="margin-top: 20px;">
+                  <table class="highlight striped">
+                    <thead>
+                      <tr>
+                        <th class="large" colspan="2" style="text-align: left;">
+                          Passenger Handling Basics
+                        </th>
+                        <th class="min">
+                          <a href="#!" ><i class="material-icons" style="margin-top: 6px;">arrow_downward</i></a>
+                          <a href="#"><i class="material-icons" style="margin-top: 6px;">arrow_upward</i></a>
+                          <a href="#!"><i class="material-icons" style="margin-top: 6px;">edit</i></a>
+                          <a href="#!"><i class="material-icons" style="margin-top: 6px;">delete</i></a>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td style="text-align: left;">Passenger Handling Basics</td>
+                          <td>Document</td>
+                          <td>
+                            <a href="#!" ><i class="material-icons" style="margin-top: 6px;">arrow_downward</i></a>
+                            <a href="#"><i class="material-icons" style="margin-top: 6px;">arrow_upward</i></a>
+                            <a href="#!"><i class="material-icons" style="margin-top: 6px;">edit</i></a>
+                            <a href="#!"><i class="material-icons" style="margin-top: 6px;">delete</i></a>
+                          </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="highlight striped" style="margin-top: 20px;">
+                    <thead>
+                      <tr>
+                        <th class="large" colspan="2" style="text-align: left;">
+                          Passenger Handling Basics
+                        </th>
+                        <th class="min">
+                          <a href="#!" ><i class="material-icons" style="margin-top: 6px;">arrow_downward</i></a>
+                          <a href="#"><i class="material-icons" style="margin-top: 6px;">arrow_upward</i></a>
+                          <a href="#!"><i class="material-icons" style="margin-top: 6px;">edit</i></a>
+                          <a href="#!"><i class="material-icons" style="margin-top: 6px;">delete</i></a>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td style="text-align: left;">Passenger Handling Basics</td>
+                          <td>Document</td>
+                          <td>
+                            <a href="#!" ><i class="material-icons" style="margin-top: 6px;">arrow_downward</i></a>
+                            <a href="#"><i class="material-icons" style="margin-top: 6px;">arrow_upward</i></a>
+                            <a href="#!"><i class="material-icons" style="margin-top: 6px;">edit</i></a>
+                            <a href="#!"><i class="material-icons" style="margin-top: 6px;">delete</i></a>
+                          </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal addSectionModal starts here-->
+
+        <div id="addSectionModal" class="modal modal-fixed-footer" style="height: 350px;">
+            <div class="modal-header">
+              <h5>Add Section</h5>
+            </div>
+            <div class="modal-content">
+              <div class="content-row">
+                <div>
+                  <b>Type*</b>
+                    <input type="text" name="" id="locationName" class="validate">
+                </div>
+              </div>
+              <div class="content-row">
+                <b>Description</b>
+                    <textarea style="resize:none;" id="description" class="materialize-textarea"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+              <a class="btn waves-effect waves-light bttn" type="submit" name="action" id="saveLocationBtn"><i class="material-icons left">save</i>Save</a>
+            </div>
+        </div>
+
+        <!--Modal addSectionModal ends here-->
+
+        <!--Modal addContentModal starts here-->
+
+        <div id="addContentModal" class="modal modal-fixed-footer">
+            <div class="modal-header">
+              <h5>Add Content</h5>
+            </div>
+            <div class="modal-content">
+              <div class="content-row">
+                <div>
+                  <b>Section*</b>
+                    <select>
+                      <option>asd</option>
+                      <option>asd</option>
+                      <option>asd</option>
+                    </select>
+                </div>
+              </div>
+              <div class="content-row">
+                <div>
+                  <b>Content Type*</b>
+                    <select>
+                      <option>asd</option>
+                      <option>asd</option>
+                      <option>asd</option>
+                    </select>
+                </div>
+              </div>
+              <div class="content-row">
+                <div>
+                  <b>File*</b>
+                    <select>
+                      <option>asd</option>
+                      <option>asd</option>
+                      <option>asd</option>
+                    </select>
+                </div>
+              </div>
+              <div class="content-row">
+                <b>File*</b>
+                    <input type="text" name="" id="locationName" class="validate">
+              </div>
+              <div class="content-row">
+                <div class="file-field input-field" style="margin-top: 0 !important;">
+                  <div class="btn bttn right" style="margin-top: 20px;">
+                    <span>Browse File</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper" style="padding-top: 0 !important;">
+                    <b>Browse File</b>
+                    <input class="file-path validate" type="text" id="fileupload">
+                  </div>
+                </div>
+              </div>
+              <div class="content-row">
+                <b>URL *</b>
+                    <input type="text" name="" id="locationName" class="validate">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+              <a class="btn waves-effect waves-light bttn" type="submit" name="action" id="saveLocationBtn"><i class="material-icons left">save</i>Save</a>
+            </div>
+        </div>
+
+        <!--Modal addContentModal ends here-->
+
+        <!--Modal addExamModal starts here-->
+
+        <div id="addExamModal" class="modal modal-fixed-footer" style="height: 400px;">
+            <div class="modal-header">
+              <h5>Add Section</h5>
+            </div>
+            <div class="modal-content">
+              <div class="content-row">
+                <div>
+                  <b>Source*</b>
+                    <select>
+                      <option>asd</option>
+                      <option>asd</option>
+                      <option>asd</option>
+                    </select>
+                </div>
+              </div>
+              <div class="content-row">
+                <b>Exam Type*</b>
+                    <select>
+                      <option>asd</option>
+                      <option>asd</option>
+                      <option>asd</option>
+                    </select>
+              </div>
+              <div class="content-row">
+                <b>Exam Title*</b>
+                    <select>
+                      <option>asd</option>
+                      <option>asd</option>
+                      <option>asd</option>
+                    </select>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+              <a class="btn waves-effect waves-light bttn" type="submit" name="action" id="saveLocationBtn"><i class="material-icons left">save</i>Save</a>
+            </div>
+        </div>
+
+        <!--Modal addExamModal ends here-->
+
+      </div>
+  </body>
+</html>

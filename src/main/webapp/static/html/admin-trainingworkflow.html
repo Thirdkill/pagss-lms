@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Training flow setup</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/vendor/materialize/js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/css/page.css">   
+   </head>
+  
+   <body >
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="brand-logo" id="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+        <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav sidenav-fixed mymenu">
+               <li><a href="admin-trainingcalendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li><a href="admin-trainingcourse.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body" style="display: block;">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-jobroles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-trainingcategory.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-usergroups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ipaddress.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li class="active"><a href="admin-trainingworkflow.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topicdifficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container2">
+          <div class="row">
+            <div class="col s12 m12">
+               <h4>Training Flow Setup</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <hr style="width:100%;">
+          </div>
+
+          <div class="row">
+            <div id="left-option" class="col s12">
+              <form style="margin-left: -3px;margin-top: -4px;">
+                <div id="left-option" class="col s6" style="padding-left: 0;">
+                  <div class="col s2 m1" style="padding: 0;margin-top: 10px;">
+                    <label>
+                     <input type="radio" name="tfs" class="with-gap" value="jobrole" id="jobRoleRadio">
+                     <span></span>
+                   </label>
+                  </div>
+                  <div class="col s10 m11 input-field" style="padding-left:0;margin: 0;" id="jobRoleDropDown">
+                    <h6>Job Role</h6>
+                    <select id="jobRoleDropDown">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="opt1">Operations Supervisor</option>
+                      <option value="opt2">Option 2</option>
+                      <option value="opt3">Option 3</option>
+                      <option value="opt3">ZZZZZZZZZZ</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="right-option" class="col s6">
+                  <div class="col s2 m1" style="padding-left:0;margin-top: -5px;">
+                    <p>
+                      <label>
+                        <input type="radio" name="tfs" class="with-gap" value="usergrp" id="userGroupRadio">
+                        <span></span>
+                      </label>
+                    </p>
+                  </div>
+                  <div class="col s10 m11 input-field" style="padding-left:0;margin: 0;" id="userGroupCon">
+                    <h6>User Group</h6>
+                    <select id="userGroupDropDown">
+                      <option value="" disabled selected>Choose your option</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <div class="right buttonright">
+                  <a data-target="modal1" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name=""><i class="material-icons left">add_circle</i>Add training stage</a>
+                  <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">save</i>Save flow</a>
+               </div>
+            </div>
+           </div>
+
+
+
+
+           <!--Option starts here-->
+           
+           <div class="row opt1 showOpt">
+              <table class="highlight responsive-table">
+                <thead>
+                  <tr>
+                      <th>Order No.</th>
+                      <th>Category</th>
+                      <th>Course</th>
+                      <th>Code</th>
+                      <th>Prerequisite</th>
+                      <th>Required</th>
+                      <th>Recurring</th>
+                      <th>Invterval</th>
+                      <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td style="width:60px;">1</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                    <td>Eclair</td>
+                    <td>
+                      <select>
+                        <option value="" disabled selected></option>
+                        <option value="opt1">asd</option>
+                        <option value="opt2">asd</option>
+                        <option value="opt3">asd</option>
+                      </select>
+                    </td>
+                    <td>
+                      <label style="margin-left:-20px !important;">
+                        <input type="checkbox">
+                        <span style="padding: 0 !important;"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <label style="margin-left:-20px !important;">
+                        <input type="checkbox">
+                        <span style="padding: 0 !important;"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <input type="text" name="">
+                    </td>
+                    <td>
+                      <a href="#!" ><i class="material-icons">arrow_downward</i></a>
+                      <a href="#"><i class="material-icons">arrow_upward</i></a>
+                      <a href="#!"><i class="material-icons">delete</i></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+           </div>
+           <!--Option ends here-->
+            
+        </div>
+
+
+
+         <!--Modal Starts here-->
+         <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-header">
+              <h5>Add Training Stage</h5>
+            </div>
+            <div class="modal-content">
+              <div style="padding-top:5px;" class="content-row nav-wrapper col s12 m7 row">
+                 <form class="col s12">
+                    <div class="row">
+                      <div class="col m6 hide-on-med-and-down">
+                      </div>
+                      <div class="input-field col s12 m6">
+                        <input style="padding-right: 0 !important;" id="search" type="search" name="" placeholder="search">
+                          <label class="label-icon" for="search"><i style="margin-top:4px;" class="material-icons">search</i></label>
+                        <i style="margin-top:1px;" class="material-icons">close</i>
+                      </div>
+                    </div>
+                 </form>
+              </div>
+              <div class="content-row">
+                <table class="highlight responsive-table">
+                  <thead>
+                    <tr>
+                        <th>
+                          <label style="margin-left:15px !important;">
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </th>
+                        <th>Code<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                        <th>Location<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                        <th>Description<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                        <th>Status<a href="#!"><i class="material-icons down">arrow_drop_down</i></a><a href="#"><i class="material-icons up">arrow_drop_up</i></a></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label style="margin-left:15px !important;">
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close btn waves-effect waves-light bttn" type="button" name="action"><i class="material-icons left">cancel</i>Cancel</a>
+              <a class="btn waves-effect waves-light bttn" type="submit" name="action"><i class="material-icons left">save</i>Save</a>
+            </div>
+        </div>
+        <!--Modal ends here-->
+
+
+      </div>
+
+   </body>
+</html>

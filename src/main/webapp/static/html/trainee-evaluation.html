@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Training Evaluation</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../../CSS/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../../js/materialize.min.js"></script>  
+      <script src = "../../js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../../CSS/traineepage.css">  
+   </head>
+  
+   <body>
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <a href="#!" class="compname">Learning Management System</a>
+                  <ul class="right hide-on-med-and-down" style="margin-right: 10px;">
+                    <li>
+                      <a href="#!" class="profset">
+                        <img id="profile" src="../assets/images/usersimage/user.png">
+                      </a>
+                    </li>
+                    <li>
+                        <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                        <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav mymenu">
+               <li><a href="trainee-dashboard.html" class="waves-effect waves-light"><i class="material-icons">dashboard</i>Dashboard</a></li>
+               <li><a href="trainee-details.html" class="waves-effect waves-light"><i class="material-icons">details</i>Details</a></li>
+               <li><a href="trainee-classroomtraining.html" class="waves-effect waves-light"><i class="material-icons">class</i>Trainees</a></li>
+               <li><a href="trainee-attendance.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Attendance</a></li>
+               <li><a href="trainee-settings.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Settings</a></li>
+               <li><a href="trainee-materials.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Materials</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">assessment</i>Exams</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">assessment</i>Financials</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container1">
+          <div class="row">
+            <div class="col s12 m3" style="padding-top: 20px;">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../../resources/images/usersimage/user.png">
+                  <a class="btn-floating btn-large halfway-fab waves-effect waves-light bttn"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+              <div>
+                <h6><b>Passenger Handling</b></h6>
+                <p><label><span>Class 101</span></label></p>
+                <p><label><span>Classroom Training</span></label></p>
+                <p><label><span>Status</span></label></p>
+              </div>
+            </div>
+            <div class="col s12 m9" style="padding: 5px;">
+              <div class="row" style="margin-bottom: 20px;">
+                <ul class="pagination hide-on-med-and-down">
+                  <li><a href="trainee-dashboard.html"><u>Dashboard</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-details.html"><u>Details</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-classroomtraining.html"><u>Trainees</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-attendance.html"><u>Attendance</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-settings.html"><u>Settings</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-materials.html"><u>Materials</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-exams.html"><u>Exams</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-financials.html"><u>Financials</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-evaluation.html">Evaluation</a></li>
+                </ul>
+              </div>
+              <!-- content starts here -->
+              <div class="divcard">
+
+                <div class="row">
+                  <div class="right">
+                    <a href="#!" class="btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;"><i class="material-icons left">arrow_back</i>Back</a>
+                    <a href="#!" class="btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;"><i class="material-icons left">save</i>Save</a>
+                    <a href="#!" class="btn bttn waves-light waves-effect" type="submit" style="margin-right: 5px;"><i class="material-icons left">add_circle</i>Create New Exams</a>
+                  </div>
+                </div>
+
+                <div class="row" style="padding: 10px;margin-top: 30px;">
+                  <h6><b>Evaluation Settings</b></h6>
+                  <hr>
+                  <div>
+                    <p>
+                      <label>
+                        <input type="checkbox" name="">
+                        <span style="color: #1e1e1e">Required</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" name="">
+                        <span style="color: #1e1e1e">Anonymous sender</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row" style="padding: 10px;">
+                  <h6><b>Class Evaluation</b></h6>
+                  <hr>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="mins">
+                          <a href="#!"><i class="material-icons">edit</i></a>
+                          <a href="#!"><i class="material-icons">delete</i></a>
+                          <td style="text-align: left">Evaluation Sheet for Mandatory Trainings</td>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="row" style="padding: 10px;">
+                  <h6><b>Course Evaluation</b></h6>
+                  <hr>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="mins">
+                          <a href="#!"><i class="material-icons">edit</i></a>
+                          <td style="text-align: left">Evaluation Sheet for Mandatory Trainings</td>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="row">
+                  <div class="col s12 m4">
+                     <h6 style="margin-top: 30px;"><b>Available Evaluation</b></h6>
+                  </div>
+                  <div style="padding-top:5px;" class="nav-wrapper col s12 m8">
+                    <div class="row">
+                       <div style="margin-top:19px;" class="input-field col s6 m7">
+                          <input id="searchLocation" type="search" name="" placeholder="search">
+                          <label class="label-icon" for="search"><i style="margin-top:4px;" class="material-icons">search</i></label>
+                          <i style="margin-top:1px;" class="material-icons">close</i>
+                       </div>
+                       <div class="input-field col s6 m5">
+                          <a href="#!" style="width:100%;text-transform:capitalize;" class="btn modal-trigger waves-effect waves-light bttn" type="submit" name="" ><i class="material-icons left">add_circle</i>Add as Class Evaluation</a>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <hr style="width:100%;margin-top: 0;">
+                  <table>
+                   <tbody>
+                     <tr>
+                        <td class="mins">
+                          <label>
+                            <input type="checkbox" name="">
+                            <span></span>
+                          </label>
+                        </td>
+                        <td style="text-align: left;">
+                         asd
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="row" style="margin-top: 20px;">
+                  <div class="col s12 m8" style="padding-top: 20px;">
+                     <span><b>Trainees' Evaluation</b></span>
+                  </div>
+                  <div style="padding-top:5px;" class="col s12 m4">
+                     <div class="col s12 m10">
+                       <select>
+                         <option>Class/Course Evaluation</option>
+                         <option>asd</option>
+                         <option>asd</option>
+                       </select>
+                     </div>
+                     <div class="col s12 m2">
+                       <a href="#!"><i class="material-icons" style="padding-top: 10px;">print</i></a>
+                     </div>
+                  </div>
+                </div>
+
+                <div class="row" style="padding: 10px;">
+                  <hr style="width:100%;margin-top: 0;">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Full Name</th>
+                        <th>Employee Number</th>
+                        <th>Job Role</th>
+                        <th>Date Finished</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#!"><i class="material-icons">file_download</i></a></td>
+                        <td>asd</td>
+                        <td>asd</td>
+                        <td>asd</td>
+                        <td>asd</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+               
+
+              </div>
+              <!-- content ends here -->
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+  </body>
+</html>

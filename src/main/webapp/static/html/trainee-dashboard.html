@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Training Dashboard</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">  
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../assets/vendor/materialize/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "../assets/vendor/materialize/js/materialize.min.js"></script>  
+      <script src = "../assets/vendor/materialize/js/init.js"></script> 
+      
+
+      <link rel="stylesheet" type="text/css" href="../assets/css/traineepage.css">  
+   </head>
+  
+   <body>
+
+      <div>
+         <div class="navbar-fixed" style="z-index:2;">
+            <nav>
+               <div class="nav-wrapper">
+                  <a href="#" class="sidenav-trigger hide-on-large-only" data-target="slide-out"><i class="material-icons">menu</i></a>
+                  <ul class="hide-on-med-and-down" style="margin-right: 10px;">
+                    <li class="left">
+                      <ul>
+                        <li><a data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="padding: 0 15px">menu</i></a></li>
+                        <li><a href="#!" class="compname">Learning Management System</a></li>
+                      </ul>
+                    </li>
+                    <li class="right">
+                      <ul>
+                        <li>
+                          <a href="#!" class="profset">
+                            <img id="profile" src="../assets/images/usersimage/user.png">
+                          </a>
+                        </li>
+                        <li>
+                            <span class="left" style="color: #1e1e1e;font-weight: bold;padding-right: 20px;margin-top: -7px;">Juan Dela Cruz</span>
+                            <label class="left" style="margin-left: -120px;padding-top: 10px;">Administrator</label>
+                        </li>
+                        <li>
+                          <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">notifications</i></a>
+                        </li>
+                        <li>
+                          <a href="#!"><i style="font-size: 30px !important;" class="material-icons account_circle">power_settings_new</i></a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+
+
+         <!--sidenav starts here-->
+         <div>
+            <ul id="slide-out" class="sidenav">
+               <li><a href="admin-training-calendar.html" class="waves-effect waves-light"><i class="material-icons">perm_contact_calendar</i>Training Calendar</a></li>
+               <li><a href="admin-training-course.html" class="waves-effect waves-light"><i class="material-icons">description</i>Training Course</a></li>
+               <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">class</i>Class</a></li>
+               <li><a href="admin-examinations.html" class="waves-effect waves-light"><i class="material-icons">assignment</i>Examination</a></li>
+               <li><a href="admin-evaluation.html" class="waves-effect waves-light"><i class="material-icons">assessment</i>Evaluation</a></li>
+               <li style="margin-bottom: 55px;" class="no-padding" >
+                  <ul class="collapsible collapsible-accordion" >
+                     <li class="bold" >
+                        <a class="collapsible-header waves-effect waves-light" tabindex="0"><i class="material-icons">settings</i>Settings</a>
+                        <div class="collapsible-body" style="display: block;">
+                           <ul style="background-color: #FEFEFE !important;">
+                              <li><a href="admin-users.html"><i class="material-icons">account_box</i>Users</a></li>
+                              <li><a href="admin-job-roles.html"><i class="material-icons">storage</i>Job Roles</a></li>
+                              <li><a href="admin-location.html"><i class="material-icons">location_on</i>Location</a></li>
+                              <li><a href="admin-training-category.html"><i class="material-icons">event_note</i>Training Category</a></li>
+                              <li><a href="admin-user-groups.html"><i class="material-icons">group</i>User Groups</a></li>
+                              <li><a href="admin-ip-address.html"><i class="material-icons">note</i>IP Address</a></li>
+                              <li><a href="admin-training-flow-setup.html"><i class="material-icons">timeline</i>Training Flow Setup</a></li>
+                              <li><a href="admin-topic-and-difficulty.html"><i class="material-icons">content_paste</i>Topics & Difficulty Level</a></li>
+                              <li><a href="admin-questions.html"><i class="material-icons">question_answer</i>Questions</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--sidenav ends here-->
+            
+
+        <div class="container1">
+          <div class="row">
+            <div class="col s12 m3" style="padding-top: 20px;">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../assets/images/usersimage/user.png">
+                  <a class="btn-floating btn-large halfway-fab waves-effect waves-light bttn"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+              <div>
+                <h6><b>Passenger Handling</b></h6>
+                <p><label><span>Class 101</span></label></p>
+                <p><label><span>Classroom Training</span></label></p>
+                <p><label><span>Status</span></label></p>
+              </div>
+            </div>
+            <div class="col s12 m9" style="padding: 5px;">
+              <div class="row" style="margin-bottom: 20px;">
+                <ul class="pagination hide-on-med-and-down">
+                  <li><a href="trainee-dashboard.html">Dashboard</a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-details.html"><u>Details</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-classroomtraining.html"><u>Trainees</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="trainee-attendance.html"><u>Attendance</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Settings</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Materials</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Exams</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Financials</u></a></li>
+                  <li style="font-size: 18px;">|</li>
+                  <li><a href="#!"><u>Evaluation</u></a></li>
+                </ul>
+              </div>
+              <!-- content starts here -->
+              <div class="divcard">
+                <div class="row">
+                  <div class="col s12 m8">
+                    <div class="divcard">
+                      <legend style="margin-bottom: 10px;"><b>Schedule</b></legend>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                    <div style="margin-top: 20px;">
+                      Location: <span>Lorem ipsum</span>
+                    </div>
+                    <div>
+                      <p><b>Trainer</b></p>
+                    </div>
+                    <div class="row" style="margin-bottom: 20px;">
+                      <div class="col s12 m4" style="text-align: center;">
+                        <img src="../../resources/images/usersimage/user.png" style="height: 150px;width: 150px;">
+                      </div>
+                      <div class="col s12 m8">
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </div>
+                    <div class="divcard">
+                      <legend style="margin-bottom: 10px;"><b>Checklist</b></legend>
+                      <p>
+                        <label>
+                          <input type="checkbox" name="">
+                          <span style="color: #1e1e1e">not selected</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" name="">
+                          <span style="color: #1e1e1e">selected</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" name="">
+                          <span style="color: #1e1e1e">not selected</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" name="">
+                          <span style="color: #1e1e1e">selected</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" name="">
+                          <span style="color: #1e1e1e">not selected</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" name="">
+                          <span style="color: #1e1e1e">selected</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" name="">
+                          <span style="color: #1e1e1e">not selected</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" name="">
+                          <span style="color: #1e1e1e">selected</span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col s12 m4">
+                    <div class="divcard" style="clear: both;">
+                      <h3 class="left" style="margin: 0;">25</h3>
+                      <h5 style="text-align: center;vertical-align: middle;">Enrolled Trainees</h5>
+                    </div>
+                    <div class="divcard" style="clear: both;">
+                      <input type="date" class="datepicker" name="">
+                      <label></label>
+                      <h3 class="left" style="margin: 0;">25</h3>
+                      <h5 style="text-align: center;vertical-align: middle;">Present Trainees</h5>
+                    </div>
+                    <div class="divcard" style="clear: both;">
+                      <select>
+                        <option>Exam 101</option>
+                        <option>Exam 102</option>
+                        <option>Exam 103</option>
+                      </select>
+                      <h3 class="left" style="margin: 0;">25%</h3>
+                      <h5 style="text-align: center;vertical-align: middle;">Average Score</h5>
+                    </div>
+                    <div class="divcard" style="clear: both;">
+                      <select>
+                        <option>Exam 101</option>
+                        <option>Exam 102</option>
+                        <option>Exam 103</option>
+                      </select>
+                      <h3 class="left" style="margin-top: 10px;">25</h3>
+                      <h5 style="text-align: center;vertical-align: middle;">Average Exam Time</h5>
+                    </div>
+                    <div class="divcard" style="clear: both;">
+                      <select>
+                        <option>Exam 101</option>
+                        <option>Exam 102</option>
+                        <option>Exam 103</option>
+                      </select>
+                      <h3 class="left" style="margin: 0;">25%</h3>
+                      <h5 style="text-align: center;vertical-align: middle;">Exam Passers</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- content ends here -->
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+  </body>
+</html>
