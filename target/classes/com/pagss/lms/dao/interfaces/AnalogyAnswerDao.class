@@ -1,1 +1,14 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.pagss.lms.dao.interfaces;
+
+import com.pagss.lms.domains.AnalogyAnswer;
+import java.util.List;
+
+public interface AnalogyAnswerDao {
+   void createAnalogyAnswers(List<AnalogyAnswer> var1);
+
+   List<AnalogyAnswer> fetchAnalogyAnswers(int var1);
+
+   void deleteAnalogyAnswers(int var1);
+}
 
