@@ -1,1 +1,53 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
 
+.mother-container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: /* linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  */url("../images/login/login-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.subContainer {
+	background-color: rgba(255,255,255, 0.7);
+	width: 450px;
+	height: 450px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+[type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+	border: 2px solid #fff;
+}
+
+.text-input
+{
+	background-color: #ffffff !important;
+	border-radius: 5px !important;
+	color: #0F0F0F;
+	padding-left: 5px !important;
+	width: 100% !important;
+}
+h5 {
+	margin-top: 0;
+	color: #fff;
+}
+#fontcolor {
+	color: #ffffff;
+}
+.bttn
+{
+	background-color: #1e88e5 !important;
+	width: 100%;
+}
